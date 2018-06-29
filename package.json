@@ -1,0 +1,21 @@
+{
+  "name": "html_css",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "",
+    "start": "lite-server | gulp sass",
+    "build": "gulp sass"
+  },
+  "keywords": [],
+  "author": "Sergey Alekseeev",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.7.3"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.1",
+    "lite-server": "^2.4.0"
+  }
+}

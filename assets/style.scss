@@ -1,0 +1,55 @@
+$main-color: whitesmoke;
+$block-shadow-color: white;
+$block-shadow: 0 0 9px paleturquoise;
+
+@mixin size-block($width, $height, $margin-top) {
+  width: $width;
+  height: $height;
+  @if $margin-top != 0 {
+    margin-top: $margin-top;
+  }
+}
+
+@mixin display-container($type) {
+  display: $type;
+}
+
+
+body {
+  background-color: $main-color;
+}
+
+.block_shadow {
+  background-color: $block-shadow-color;
+  box-shadow: $block-shadow;
+}
+
+.header {
+  margin: 0 auto;
+  @include display-container(block);
+
+  &__content {
+    @include size-block(100%, 200px, 0px)
+  }
+
+  &__title {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 10px;
+  }
+}
+
+.content-main {
+  @include display-container(block);
+  &__post {
+    @include size-block(100%, 400px, 20px)
+  }
+}
+
+.footer {
+  @include display-container(block);
+  &__content {
+    @include size-block(100%, 150px, 30px)
+  }
+}
+
