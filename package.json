@@ -2,7 +2,7 @@
   "name": "html_css",
   "version": "1.0.0",
   "scripts": {
-    "start": "lite-server | gulp sass",
+    "start": "lite-server | gulp start"
   },
   "keywords": [],
   "author": "Sergey Alekseeev",
@@ -11,7 +11,10 @@
     "sass": "^1.7.3"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
     "gulp": "^4.0.0",
+    "gulp-babel": "^7.0.1",
     "gulp-sass": "^4.0.1",
     "lite-server": "^2.4.0"
   }

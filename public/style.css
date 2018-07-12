@@ -15,6 +15,10 @@ body {
     font-size: 25px;
     text-align: center;
     padding-top: 10px; }
+  .header__title-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 0 30px; }
 
 .content-main {
   display: block; }
