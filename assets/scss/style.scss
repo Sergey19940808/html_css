@@ -1,3 +1,4 @@
+
 $main-color: whitesmoke;
 $block-shadow-color: white;
 $block-shadow: 0 0 9px paleturquoise;
@@ -17,6 +18,22 @@ $block-shadow: 0 0 9px paleturquoise;
 
 body {
   background-color: $main-color;
+  // @media only screen and (max-width: 1500px) {
+  //   background-color: blue;
+  // }
+}
+
+.fz-18 {
+  font-size: 18px;
+  
+}
+
+.fz-25 {
+  font-size: 25px;
+}
+
+.fn-weight {
+  font-weight: 900; 
 }
 
 .block_shadow {
@@ -29,32 +46,43 @@ body {
   @include display-container(block);
 
   &__content {
-    @include size-block(100%, 200px, 0px)
+    @include size-block(100%, 100%, 0px)
   }
 
   &__title {
-    font-size: 25px;
     text-align: center;
     padding-top: 10px;
   }
   &__title-container {
     display: flex;
     justify-content: center;
+    align-items: center;
     margin: 0 0 0 30px;
+  }
+  &__title-content {
+    width: 300px;
   }
 }
 
 .content-main {
   @include display-container(block);
   &__post {
-    @include size-block(100%, 400px, 20px)
+    @include size-block(100%, 100%, 20px)
+  }
+  &__post-title {
+    padding: 20px 0 10px 20px
+  }
+  &__post-text {
+    padding: 10px 10px 20px 30px;
   }
 }
 
 .footer {
   @include display-container(block);
   &__content {
-    @include size-block(100%, 150px, 30px)
+    text-align: center;
+    padding: 35px 0 0 0;
+    @include size-block(100%, 70px, 20px)
   }
 }
 
