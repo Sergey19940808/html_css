@@ -1,11 +1,16 @@
+* {
+  margin: 0;
+  padding: 0; }
+
 body {
-  background-color: whitesmoke; }
+  background-color: whitesmoke;
+  font: 100%/1.5em Arial, Helvetica, sans-serif; }
 
 .fz-18 {
-  font-size: 18px; }
+  font-size: 1.25em; }
 
-.fz-25 {
-  font-size: 25px; }
+.fz-30 {
+  font-size: 1.875em; }
 
 .fn-weight {
   font-weight: 900; }
@@ -15,38 +20,39 @@ body {
   box-shadow: 0 0 9px paleturquoise; }
 
 .header {
-  margin: 0 auto;
-  display: block; }
+  display: block;
+  margin: 20px; }
   .header__content {
     width: 100%;
     height: 100%; }
   .header__title {
     text-align: center;
-    padding-top: 10px; }
+    padding: 10px 10px 10px 10px; }
   .header__title-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 0 0 30px; }
+    padding: 15px 0 25px 0;
+    width: 100%; }
   .header__title-content {
-    width: 300px; }
+    width: 17em; }
 
 .content-main {
-  display: block; }
+  display: block;
+  margin: 20px; }
   .content-main__post {
     width: 100%;
-    height: 100%;
-    margin-top: 20px; }
+    height: 100%; }
   .content-main__post-title {
     padding: 20px 0 10px 20px; }
   .content-main__post-text {
-    padding: 10px 10px 20px 30px; }
+    padding: 10px 40px 20px 40px; }
 
 .footer {
-  display: block; }
+  display: block;
+  margin: 20px; }
   .footer__content {
     text-align: center;
-    padding: 35px 0 0 0;
+    padding: 50px 0 50px 0;
     width: 100%;
-    height: 70px;
-    margin-top: 20px; }
+    height: 100%; }
